@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的DL集成平台</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo-container">
+            <a href="#"><img src="images/logo2.png" 
+                alt="Logo" class="logo" width="180" height="80"></a>
+        </div>
+        <div class="nav-container">
+            <nav>
+                <a href="#">首页</a>
+                <a href="#">模型简介</a>
+                <a href="#">模型训练</a>
+            </nav>
+        </div>
+    </header>
+    <main id="container">
+        <section class="intro" style="text-align: center; margin-top: 210px;" >
+            <div class="img-container">
+                <a href="#"><img src="images/logo2.png" 
+                    alt="Intro Image" width="550px" height="200px"></a>
+            </div>
+            <div class="text-container" style="margin-top: 25px;">
+                <p style="font-size: 28px;">零代码跑通深度学习，让您的模型一路畅通无阻</p>
+            </div>
+        </section>
+        <section class="project-intro" style=" margin-top: 100px; ">
+            <div class="project-intro-title">
+                <h2>项目简介</h2>
+            </div>
+            <div class="project-intro-text">
+                <p>
+                    本项目旨在为用户提供一个简便易用的深度学习模型集成与训练环境。
+                    通过零代码操作，用户可以轻松地上传、配置和训练各种深度学习模型，无需编写复杂的代码。
+                    项目平台支持多种主流深度学习框架，提供丰富的预训练模型和数据处理工具，帮助用户快速实现模型的开发与部署。
+                    无论您是初学者还是有经验的开发者，我们的平台都能满足您的需求，为深度学习变得更加高效和便捷而努力 ! ! !
+                </p>
+            </div>
+        </section>
+        <section class="model-intro" style=" margin-top: 250px;">
+            <div class="model-intro-title">
+                <h2>模型简介</h2>
+            </div>
+            <div class="model-intro-text">
+                <ul class="model-list">
+                    <li class="model1"><a href="model_intro_train.html" >
+                        <img src="images/linear_regression.png"
+                            alt="linear_regression_photo">
+                        <span class="model1name">线性回归</span>
+                    </a></li>
+                    <li class="model2"><a href="" >
+                        <img src="images/mlp.png"
+                            alt="mlp_photo" >
+                            <span class="model2name">mlp模型</span>
+                    </a></li>
+                    <li class="model3"><a href="" >
+                        <img src="images/cnn.png"
+                            alt="cnn_photo" >
+                            <span class="model3name">cnn模型</span>
+                    </a></li>
+                    <li class="model4"><a href="" >
+                        <img src="images/rnn.png"
+                            alt="rnn_photo" >
+                            <span class="model3name">rnn模型</span>
+                    </a></li>
+                    <li class="model5"><a href="" >
+                        <img src="images/lstm.png"
+                            alt="lstm_photo" >
+                        <span class="model5name">lstm模型</span>
+                    </a></li>
+                    <li class="model6"><a href="" >
+                        <img src="images/transform.png"
+                            alt="transform" >
+                            <span class="model6name">transform模型</span>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="model-train" style=" margin-top: 250px;">
+            <div class="model-train-title">
+                <h2>模型训练</h2>
+            </div>
+            <div class="model-train-text">
+                <ul class="model-train-list">
+                    <li class="model1-train"><a href="" >
+                        <img src="images/linear_regression.png"
+                            alt="linear_regression_photo">
+                        <span class="model1trainname">线性回归</span>
+                    </a></li>
+                    <li class="model2-train"><a href="" >
+                        <img src="images/mlp.png"
+                            alt="mlp_photo" >
+                            <span class="model2trainname">mlp模型</span>
+                    </a></li>
+                    <li class="model3-train"><a href="" >
+                        <img src="images/cnn.png"
+                            alt="cnn_photo" >
+                            <span class="model3trainname">cnn模型</span>
+                    </a></li>
+                    <li class="model4-train"><a href="" >
+                        <img src="images/rnn.png"
+                            alt="rnn_photo" >
+                            <span class="model3trainname">rnn模型</span>
+                    </a></li>
+                    <li class="model5-train"><a href="" >
+                        <img src="images/lstm.png"
+                            alt="lstm_photo" >
+                        <span class="model5trainname">lstm模型</span>
+                    </a></li>
+                    <li class="model6-train"><a href="" >
+                        <img src="images/transform.png"
+                            alt="transform" >
+                            <span class="modeltrain6name">transform模型</span>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+        <footer class="footer" style="margin-top: 180px;">
+            <p style="text-align: center; color: grey; margin-top: 100px; padding-bottom: 20px;">
+                &copy; 2025 我的DL集成平台，网页构建中，如有问题请联系：minjinwuwel1@163.com
+            </p>
+        </footer>
+    </main>
+</body> 
+<script>
+  window.addEventListener("scroll", function() {
+    const header = document.querySelector("#header");
+    if (window.scrollY > 50) { // 滚动超过50px
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
+
+</html>
