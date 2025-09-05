@@ -30,17 +30,19 @@
             padding-bottom:10px;
             padding-top: 5px;
             margin:0;
-            background-color: transparent; /* 透明 */
+            background-color: #81D4FA;; /* 透明 */
             position: fixed;
             transition: background-color 0.3s, border-bottom 0.3s;
         }
         #header.scrolled {
             background-color: rgba(255, 255, 255, 1); /* 滚动后变白 */
             border-bottom: 1px solid #000; /* 出现边框 */
+            border-radius: 5px;
         }
         #header:hover {
-        background-color: rgba(255, 255, 255, 1); /* 变白 */
-        border-bottom: 1px solid #000; /* 出现边框 */
+            background-color: rgba(255, 255, 255, 1); /* 变白 */
+            border-bottom: 1px solid #000; /* 出现边框 */
+            border-radius: 5px;
         }
         .nav-container nav a {
             text-decoration: none;  /* 去掉下划线 */
@@ -53,9 +55,36 @@
             margin-left: 0;
         }
         .sidebar {
-            margin-top: 150px;
-            width: 200px;
-            padding: 20px;
+            margin-top: 100px;
+            width: 15%;
+            height: 100vh;
+            position: fixed;
+            border: grey 1px solid;
+            border-top: none;
+            border-radius: 8px;
+            background-color: #B3E5FC; /* 更深一点的蓝色 */
+        }
+        .sidebar-list {
+            display: flex;
+            padding: 5px;
+            margin-top: 25px;
+            gap: 10px;
+            flex-direction: column;
+            list-style-type: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .sidebar-list li {
+            padding: 10px;
+            width: 90%;
+            text-align: center;
+            border-radius: 8px;
+            background-color: transparent;
+        }
+        .sidebar-list a {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
         }
     </style>
 </head>
@@ -67,21 +96,21 @@
         </div>
         <div class="nav-container">
             <nav>
-                <a href="#">首页</a>
-                <a href="#">模型简介</a>
+                <a href="index.html">首页</a>
+                <a href="">模型简介</a>
                 <a href="#">模型训练</a>
             </nav>
         </div>
     </header>
     <main id="container">
         <aside class="sidebar">
-            <h2>现有模型</h2>
-            <ul class="sidebar-list" style="list-style-type: none; padding: 0;">
-                <li><a href="#">线性回归模型训练</a></li>
-                <li><a href="#">MLP模型训练</a></li>
-                <li><a href="#">CNN模型训练</a></li>
-                <li><a href="#">RNN模型训练</a></li>
-                <li><a href="#">Transformer模型训练</a></li>
+            <ul class="sidebar-list">
+                <li class="model1"><a href="#"><span>线性回归</span></a></li>
+                <li class="model2"><a href="#"><span>mlp模型</span></a></li>
+                <li class="model3"><a href="#"><span>cnn模型</span></a></li>
+                <li class="model4"><a href="#"><span>rnn模型</span></a></li>
+                <li class="model5"><a href="#"><span>lstm模型</span></a></li>
+                <li class="model6"><a href="#"><span>transformer模型</span></a></li>
             </ul>
         </aside>
     </main>
